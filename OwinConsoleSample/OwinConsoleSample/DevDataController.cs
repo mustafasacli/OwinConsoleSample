@@ -20,7 +20,7 @@ namespace OwinConsoleSample
 
 
         [ResponseType(typeof(int))]
-        [AcceptVerbs("GET", "POST")]
+        [AcceptVerbs("GET", "POST")]//, System.Net.Http.Formatting.FormDataCollection
         public IHttpActionResult Post(string deviceCode, string data)
         {
             int rs = 0;
